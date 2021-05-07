@@ -1,0 +1,44 @@
+.OnOffWrapper {
+
+}
+
+
+
+}
+.btnOnTrue {
+    width: 100px ;
+    height: 50px ;
+    border : solid black ;
+    background-color: green;
+}
+.
+.btnOff {
+    width: 100px ;
+    height: 50px ;
+    border : solid black ;
+    background-color: red;
+
+}
+
+.indicator {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: solid black ;
+}
+
+.indicatorOn {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: solid black;
+    background-color: green;
+
+}
+.indicatorOff {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: solid black;
+    background-color: red;
+}
