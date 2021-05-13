@@ -2,12 +2,13 @@ import React, {useState} from "react";
 
 
 type OnOffprintType = {
-    ///value: boolean;
+    on:(off:boolean) => void
+    btnValue:boolean
 }
 
 export function OnOff(props: OnOffprintType) {
 
-    let [value , setValue] = useState(true)
+
     const wrapper = {
         display: "flex",
         justifyContent: "space-Around",
@@ -17,27 +18,27 @@ export function OnOff(props: OnOffprintType) {
         width: "100px",
         height: "50px",
         border: "solid black",
-        backgroundColor:value ? "green":"white"
+        backgroundColor:props.btnValue ? "green":"white"
     }
     const btnOff = {
         width: "100px",
         height: "50px",
         border: "solid black",
-        backgroundColor: value ? "white":"red"
+        backgroundColor: props.btnValue ? "white":"red"
     }
     const indicator = {
         width: "50px" ,
         height: "50px",
         borderRadius: "25px",
         border: "solid black",
-        backgroundColor: value ? "green":"red"
+        backgroundColor: props.btnValue ? "green":"red"
     }
     return (
         <div style={wrapper}>
-            <div style={btnOn} onClick={()=>setValue(true)}>
+            <div style={btnOn} onClick={()=>props.on(!props.btnValue)}>
                 ON
             </div>
-            <div style={btnOff} onClick={()=>setValue(false)}>
+            <div style={btnOff} onClick={()=>props.on(!props.btnValue)}>
 
                 OFF
 
