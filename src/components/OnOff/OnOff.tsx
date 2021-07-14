@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 
-type OnOffprintType = {
+export type OnOffprintType = {
     on:(off:boolean) => void
     btnValue:boolean
 }

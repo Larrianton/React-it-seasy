@@ -5,7 +5,7 @@ export type ratingPropsType = {
     onClick: (value:starRatingType) => void
 }
 export type starRatingType = 0 | 1 | 2 | 3 | 4 | 5
-type StarType = {
+export type StarType = {
     selected:boolean
     onClick:(value:starRatingType) => void
     value: starRatingType

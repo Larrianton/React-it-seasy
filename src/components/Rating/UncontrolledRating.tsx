@@ -6,7 +6,7 @@ type StarRatingType = {
     setValue: (value:valueStarType) => void
     value: valueStarType
 }
-type valueStarType = 0 | 1 | 2 | 3 | 4 | 5
+export type valueStarType = 0 | 1 | 2 | 3 | 4 | 5
 
 
 export function UncontrolledRating() {
